@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online VS Code</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.33.0/min/vs/loader.js"></script>
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg">
+</head>
+<body>
+  <div class="container">
+    <div class="editor-panel">
+      <h3>HTML</h3>
+      <div id="htmlEditor" class="editor"></div>
+
+      <h3>CSS</h3>
+      <div id="cssEditor" class="editor"></div>
+
+      <h3>JavaScript</h3>
+      <div id="jsEditor" class="editor"></div>
+
+      <div class="buttons">
+        <button id="runBtn">Ishga tushurish</button>
+        <button id="saveBtn">Saqlash</button>
+      </div>
+    </div>
+
+    <div class="result-panel">
+      <h3>Natija:</h3>
+      <iframe id="output"></iframe>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>© 2025 <strong>Isomiddin Xakimjanov</strong>. Barcha huquqlar himoyalangan. | VS Code Clone</p>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
